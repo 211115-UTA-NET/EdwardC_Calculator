@@ -1,0 +1,15 @@
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\bin\Debug\net6.0\Part_4.exe
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\bin\Debug\net6.0\Part_4.deps.json
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\bin\Debug\net6.0\Part_4.runtimeconfig.json
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\bin\Debug\net6.0\Part_4.dll
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\bin\Debug\net6.0\ref\Part_4.dll
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\bin\Debug\net6.0\Part_4.pdb
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.csproj.AssemblyReference.cache
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.AssemblyInfoInputs.cache
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.AssemblyInfo.cs
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.csproj.CoreCompileInputs.cache
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.dll
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\ref\Part_4.dll
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.pdb
+C:\Users\rootb\Revature\EdwardC_Calculator\Part_4\obj\Debug\net6.0\Part_4.genruntimeconfig.cache
