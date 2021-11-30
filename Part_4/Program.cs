@@ -7,8 +7,18 @@ namespace EmulatorCalculator_Part4
     {
         public static void Main(string[] args)
         {
-            Program p = new Program();
-            List<string> getInputFromFile = new List<string>();
+            // let me know if you can see this screen
+            // In advance note: This is not humanity readable.
+            // I will demo: Accept inputs from a file, perform the required operations, then output those results to a file
+            // But, first thing, i want to show you my file before and after run the program by use dotnet run.
+            // Math will only read left to right. Up to three digits
+            
+            Program p = new Program(); // This will allow me to call methods
+            
+            // store the input line into this varaibale
+            List<string> getInputFromFile = new List<string>(); 
+            
+            // Divide string into parts into this varaiable from GetInputFromFile
             List<string> userList;
             
             // Call readFile Method to get the information into List<string> getInputFromFIle 
@@ -21,26 +31,26 @@ namespace EmulatorCalculator_Part4
                 userList = new List<string>();
                 double result = 0.00D;
                 
-                // Assign individual string into List<string> userList
+                // Assign individual string into List<string> userList 
                 for(int j = 0; j < getInput!.Length; j++)
                 {
                     if(!getInput.Substring(j, 1).Equals(" ") ) // Check if getInput do not have any spacebar
                     {
-                        // Check if j variable are still under string's length then check if this string have three digits
+                        // Check if j variable are still under string's length then check if this string have three digits (000)
                         if(j + 2 < getInput!.Length && Char.IsNumber(getInput[j]) && Char.IsNumber(getInput[j+1]) && Char.IsNumber(getInput[j+2]) )
                         {
                             
                             userList.Add(getInput.Substring(j, 3));
-                            j += 2;
+                            j += 2; // Skip two loop 
                         }
-                        // Check if j variable are still under string's length, then check if this string have two digits
+                        // Check if j variable are still under string's length, then check if this string have two digits (00)
                         else if(j + 1 < getInput!.Length && Char.IsNumber(getInput[j])  && Char.IsNumber(getInput[j+1]))
                         {                        
                             
                             userList.Add(getInput.Substring(j, 2));
-                            j++;
+                            j++; //skip one loop
                         }
-                        // this string is only have one digit
+                        // this string is only have one digit (0)
                         else 
                         {
                             
@@ -53,7 +63,7 @@ namespace EmulatorCalculator_Part4
                 for(int k = 0; k < userList.Count - 1; k++)
                 {
                     double testNum;
-                    // Start with beginning string[0] to string[2]
+                    // Start with beginning string[0] to string[2] ex:(3 + 8)
                     if(k == 0) 
                     {
                         if(Double.TryParse(userList[k], out testNum))
@@ -63,7 +73,7 @@ namespace EmulatorCalculator_Part4
                         // help to skip to string[3]
                         k++; 
                     }
-                    // Start with string[3] and up
+                    // Start with string[3] and up  ex: (11 + 10)
                     else if( k > 2 && userList.Count > 3)
                     {
                         if(Double.TryParse(userList[k+1], out testNum))
@@ -137,3 +147,7 @@ namespace EmulatorCalculator_Part4
         }
     }
 }
+
+
+// By nomral, I do have allow user to choose exit, however, when i do this code, i found lots of error that i don't except. So i focus to fix this code
+// After I finish fix this code, then don't realize that i don't have time to add exit option. So this is my best code so far.
